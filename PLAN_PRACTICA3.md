@@ -125,7 +125,7 @@ Preparar el comando específico con 1000 threads y ramp-up=1s.
 ### 3.1 Redactar secciones que NO necesitan datos experimentales
 - [ ] Ejercicio 1: Explicación de cada columna del Aggregate Report (teórica)
 - [ ] Cuestión 1: Diferencias Thread Group P1-base vs P1-ws (los entrypoints, hosts y puertos son distintos)
-- [ ] Cuestión 2: ¿Dónde cambiar SESSION_ENGINE en ws? → Respuesta: en el settings.py del **backend**, porque es donde se almacenan las sesiones (el frontend es solo cliente)
+- [ ] Cuestión 2: ¿Dónde cambiar SESSION_ENGINE en ws? → Respuesta: en el settings.py del **frontend** (`P1-ws-frontend/visaSite/settings.py`), porque es donde se usa `request.session` para guardar el `numeroTarjeta` entre el POST Tarjeta y el POST Pago. El backend no usa sesiones (es stateless, solo expone una API REST)
 - [ ] Ejercicio 4: Argumentar teóricamente (el segundo loop comienza tras **atender** las peticiones del primero, opción b)
 
 ### 3.2 Dejar huecos para datos experimentales
