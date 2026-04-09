@@ -1,0 +1,27 @@
+# JMeter (149MB, descargable aparte)
+apache-jmeter-5.6.3/
+
+# Resultados de pruebas
+results_*/
+*.jtl
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Django
+db.sqlite3
+*.log
+local_settings.py
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
