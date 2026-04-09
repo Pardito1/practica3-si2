@@ -54,7 +54,7 @@
             </elementProp>
             <elementProp name="port" elementType="Argument">
               <stringProp name="Argument.name">port</stringProp>
-              <stringProp name="Argument.value">18000</stringProp>
+              <stringProp name="Argument.value">28000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="host" elementType="Argument">
@@ -207,21 +207,21 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="idComercio" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${__jexl3(${contador})}</stringProp>
+                <stringProp name="Argument.value">${__Random(1,1000000)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">idComercio</stringProp>
               </elementProp>
               <elementProp name="idTransaccion" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${__jexl3(${contador} % 100)}</stringProp>
+                <stringProp name="Argument.value">${__Random(1,1000000)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">idTransaccion</stringProp>
               </elementProp>
               <elementProp name="importe" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${__jexl3(${contador} % 100)}</stringProp>
+                <stringProp name="Argument.value">${__Random(1,1000000)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">importe</stringProp>
@@ -256,7 +256,7 @@
             <stringProp name="Assertion.custom_message" />
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">6</intProp>
+            <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree />
         </hashTree>

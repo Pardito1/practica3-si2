@@ -25,3 +25,24 @@ local_settings.py
 # IDE
 .vscode/
 .idea/
+apache-jmeter-5.6.3
+apache-jmeter-5.6.3.zip
+results_ej*/output/
+results_ej*/results.jtl
+results_*/output_users_*/
+results_*/results_users_*.jtl
+results_ej3_stress/stress_test.jmx
+*.bak
+page*.html
+cookies*.txt
+PYEOF
+apache-jmeter-5.6.3
+apache-jmeter-5.6.3.zip
+results_ej*/output/
+results_ej*/results.jtl
+results_*/output_users_*/
+results_*/results_users_*.jtl
+results_ej3_stress/stress_test.jmx
+*.bak
+page*.html
+cookies*.txt
