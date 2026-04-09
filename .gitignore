@@ -46,3 +46,6 @@ results_ej3_stress/stress_test.jmx
 *.bak
 page*.html
 cookies*.txt
+
+# Permitir los CSVs resumen de throughput (para la memoria)
+!results_*/throughput_summary.csv
